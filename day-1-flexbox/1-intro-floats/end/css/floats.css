@@ -1,21 +1,21 @@
 /* Border box declaration 
 https://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
 html {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 /* inherit border-box on all elements in the universe and before and after
  */
-*, 
-*:before, 
+*,
+*:before,
 *:after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
 	font-family: Arial, Geneva, sans-serif;
 }
 a {
-	color: #2772B0;
+	color: #2772b0;
 }
 .wrapper {
 	width: 97%;
@@ -27,23 +27,23 @@ a {
 
 div img {
 	width: 100%;
-	max-width: 250px; 
+	max-width: 250px;
 }
 /* grid system */
 
 .row::after {
-    content:"";
-    display: table;
-    clear:both;
-} 
-[class*='col-'] {
+	content: "";
+	display: table;
+	clear: both;
+}
+[class*="col-"] {
 	width: 92%;
 	margin-left: 4%;
 	margin-right: 4%;
 	min-height: 1px;
 }
 
-.col-1-2, 
+.col-1-2,
 .col-1-4 {
 	background-color: #ffc;
 }
@@ -60,8 +60,8 @@ div img {
 /* media queries */
 
 /* Mobile Landscape Screen Sizes */
-@media only screen and (min-width: 480px)  {
-	[class*='col-'] {
+@media only screen and (min-width: 480px) {
+	[class*="col-"] {
 		margin-right: 0;
 		min-height: 1px;
 		float: left;
@@ -75,11 +75,10 @@ div img {
 	.col-4 {
 		width: 92%;
 	}
-
 }
 /* Desktop screen Sizes */
 @media only screen and (min-width: 768px) {
-	.col-1-2, 
+	.col-1-2,
 	.col-1-4 {
 		width: 20%;
 	}
